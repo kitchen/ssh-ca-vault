@@ -1,0 +1,22 @@
+---
+
+# ~/.config/gcloud/application_default_credentials.json
+version: '3.7'
+services:
+  vault:
+    image: vault
+    ports:
+      - "8200:8200"
+    command:
+      - server
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - type: bind
+        source: ./vault-config.hcl
+        target: /vault/config/vault-config.hcl
+      - type: bind
+        source: ~/.config/gcloud/application_default_credentials.json
+        target: /application-default.json
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /application-default.json
