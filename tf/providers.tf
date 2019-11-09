@@ -6,3 +6,7 @@ provider "google" {
 resource "google_project_service" "ssh-ca-vault-kms" {
   service = "cloudkms.googleapis.com"
 }
+
+provider "vault" {
+  address = "http://localhost:8200"
+}
