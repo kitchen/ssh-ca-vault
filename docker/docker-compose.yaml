@@ -6,7 +6,7 @@ services:
   vault:
     image: vault
     ports:
-      - "8200:8200"
+      - "127.0.0.1:8200:8200"
     command:
       - server
     cap_add:
