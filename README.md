@@ -1,5 +1,12 @@
 Greetings!
 
+I am moving this whole shebang into gcloud over at https://github.com/kitchen/personal-terraform/ so this is no longer going to be updated. But I'll leave it up here anyways :)
+
+
+
+# old stuff
+Greetings!
+
 I'm getting awfully tired of having to update-the-world every time I get a new machine (and therefore ssh key).
 So I'm finally going to dive into the wonderful world of SSH CA.
 My previous experiment didn't go so well for some reason, and I also though it needed to be configured at the `/etc/ssh` level, not just `~/.ssh/authorized_keys`, but now I know better, and I have a proof of concept working!
