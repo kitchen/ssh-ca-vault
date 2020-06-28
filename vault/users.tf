@@ -28,5 +28,6 @@ resource "vault_ssh_secret_backend_role" "kitchen" {
   default_extensions = {
     "permit-port-forwarding" : "",
     "permit-pty" : "",
+    "permit-agent-farwording" : "",
   }
 }
